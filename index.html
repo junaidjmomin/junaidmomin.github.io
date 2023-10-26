@@ -2,90 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <h1>Welcome to My World</h1>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#about-me">About Me</a>
+            <a href="#netflix-recommendations">Netflix Recommendations</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h1>Your Name</h1>
-            <p>Web Developer, NLP Researcher, Mathematician, Physics Enthusiast, Chemistry Buff</p>
-            <p>About me: I am a passionate individual with diverse interests...</p>
-        </div>
-    </section>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>I am a physics nerd, maths buff, and a computer science enthusiast fascinated by NLP in STEM.</p>
+        </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Web Development</li>
-                <li>NLP Research</li>
-                <li>Mathematics</li>
-                <li>Physics</li>
-                <li>Chemistry</li>
-                <!-- Add more skills as needed -->
-            </ul>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="project">
-                <h3>Web Development Project</h3>
-                <p>Description of the web project...</p>
-            </div>
-            <div class="project">
-                <h3>NLP Research Project</h3>
-                <p>Description of the NLP research project...</p>
-            </div>
-            <!-- Add more projects as needed -->
-        </div>
-    </section>
-
-    <section id="netflix">
-        <div class="container">
+        <section id="netflix-recommendations">
             <h2>Netflix Recommendations</h2>
-            <p>Here are some of my favorite Netflix shows to binge-watch:</p>
             <ul>
-                <li><a href="https://www.netflix.com/title-link-1" target="_blank">Show Name 1</a> - Short summary of the show.</li>
-                <li><a href="https://www.netflix.com/title-link-2" target="_blank">Show Name 2</a> - Short summary of the show.</li>
-                <!-- Add more recommendations with direct Netflix links -->
+                <!-- Add your recommendations here -->
+                <li><a href="https://www.netflix.com/title/YOUR_TITLE">Recommended Show 1</a></li>
+                <li><a href="https://www.netflix.com/title/YOUR_TITLE">Recommended Show 2</a></li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <section id="politics-history">
-        <div class="container">
-            <h2>Politics and World History</h2>
-            <p>I love discussing politics and world history. Feel free to reach out for a discussion anytime!</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <!-- Add your contact information and a contact form here -->
-        </div>
-    </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2023 Your Name</p>
-        </div>
+        <p>© 2023 Your Name</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
 
