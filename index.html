@@ -2,51 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Advanced Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My World</h1>
-        <nav>
-            <a href="#about-me">About Me</a>
-            <a href="#netflix-recommendations">Netflix Recommendations</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container header-inner">
+            <h1>Your Name</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#recommendations">Recommendations</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>I am a physics nerd, maths buff, and a computer science enthusiast fascinated by NLP in STEM.</p>
+        <section id="about" class="info-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I'm passionate about physics, math, and computer science, particularly in the application of NLP in STEM fields.</p>
+            </div>
         </section>
 
-        <section id="netflix-recommendations">
-            <h2>Netflix Recommendations</h2>
-            <ul>
-                <!-- Add your recommendations here -->
-                <li><a href="https://www.netflix.com/title/YOUR_TITLE">Recommended Show 1</a></li>
-                <li><a href="https://www.netflix.com/title/YOUR_TITLE">Recommended Show 2</a></li>
-            </ul>
+        <section id="recommendations" class="info-section bg-alt">
+            <div class="container">
+                <h2>Netflix Recommendations</h2>
+                <div class="recommendations-grid">
+                    <!-- Placeholder for recommendations -->
+                    <div class="recommendation-item">Show 1</div>
+                    <div class="recommendation-item">Show 2</div>
+                    <!-- Add more recommendations here -->
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Your Name" required><br>
-                <input type="email" id="email" name="email" placeholder="Your Email" required><br>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea><br>
-                <button type="submit">Send Message</button>
-            </form>
+        <section id="contact" class="info-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2023 Your Name</p>
+        <div class="container">
+            <p>© 2023 Your Name</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
